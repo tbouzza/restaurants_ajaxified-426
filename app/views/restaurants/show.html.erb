@@ -1,4 +1,5 @@
 <div class="container">
+
   <h1><%= @restaurant.name %> <small><%= @restaurant.address %></small></h1>
 
   <h2>
@@ -14,4 +15,10 @@
       <% end %>
     <% end %>
   </div>
+
+  <%= simple_form_for([@restaurant, @review]) do |f| %>
+    <%= f.input :content, as: :text %>
+    <%= f.button :submit %>
+  <% end %>
+
 </div>
