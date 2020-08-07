@@ -5,12 +5,11 @@ export default class extends Controller {
 
   connect() {
     console.log('Hello from Stimulus')
-    // When user click on the button
-    // Display the value of restaurants.count in DB?
-    // In a specific HTML Tag
+    // Display the number of restaurants in DB
+    // In a specific part of the page
+
     setInterval(this.refresh, 5000);
-
-
+    // 👆 Will call refresh every 5 secs.
   }
 
   refresh = () => {
