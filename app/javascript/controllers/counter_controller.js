@@ -13,7 +13,7 @@ export default class extends Controller {
   }
 
   refresh = () => {
-    console.log('5 secondes passed 🤩')
+    console.log('5 seconds passed 🤩')
     fetch('/restaurants', { headers: { accept: "application/json" } })
       .then(response => response.json())
       .then((data) => {
